@@ -3,7 +3,9 @@ import "../styles/global.css";
 import "@fontsource/acme";
 import LandingHeader from "../components/LandingHeader.astro";
 import Herosection from "../components/Herosection.astro";
-import Model1 from "../components/Model1.astro";
+import ModelX from "../components/ModelX.astro";
+import ModelY from "../components/ModelY.astro";
+import ModelZ from "../components/ModelZ.astro";
 ---
 
 <!doctype html>
@@ -24,15 +26,20 @@ import Model1 from "../components/Model1.astro";
         <Herosection />
       </div>
       <div class="snap-center">
-        <Model1 />
+        <ModelX />
+      </div>
+      <div class="snap-center">
+        <ModelY />
+      </div>
+      <div class="snap-center">
+        <ModelZ />
       </div>
     </main>
   </body>
 </html>
 
-  <style>
-    body {
-      font-family: "Acme", sans-serif;
-    }
-  </style>
-
+<style>
+  body {
+    font-family: "Acme", sans-serif;
+  }
+</style>
