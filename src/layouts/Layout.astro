@@ -1,12 +1,13 @@
 ---
 import "../styles/global.css";
-import '@fontsource/acme';
+import "@fontsource/acme";
 import LandingHeader from "../components/LandingHeader.astro";
 import Herosection from "../components/Herosection.astro";
+import Model1 from "../components/Model1.astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -14,19 +15,24 @@ import Herosection from "../components/Herosection.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Venta de carros</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <LandingHeader />
-    <main>
-
-		  <Herosection />	
+    <main
+      class="snap-y snap-mandatory w-full h-screen overflow-y-auto overflow-x-hidden"
+    >
+      <div class="snap-center">
+        <Herosection />
+      </div>
+      <div class="snap-center">
+        <Model1 />
+      </div>
     </main>
   </body>
 </html>
 
+  <style>
+    body {
+      font-family: "Acme", sans-serif;
+    }
+  </style>
 
-<style>
-	body {
-		font-family: 'Acme', sans-serif;
-	}
-	
-</style>

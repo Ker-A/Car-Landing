@@ -1,0 +1,29 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section title="Modelo X" subtitle="Un carro hecho para ti!" color="black">
+  <div slot="footer" class="flex flex-row gap-10">
+    <div>
+      <a
+        class="text-black border-2 border-black backdrop-blur-md rounded font-medium px-20 py-2
+                hover:bg-white hover:text-black transition duration-300 ease-in-out"
+        href="#">Compralo ya!</a
+      >
+    </div>
+
+    <div>
+      <a
+        class="text-black border-2 border-black backdrop-blur-md rounded font-medium px-20 py-2
+                hover:bg-white hover:text-black transition duration-300 ease-in-out"
+        href="#">Caracteristicas</a
+      >
+    </div>
+  </div>
+  <img
+    slot="background"
+    src="/model-y.avif"
+    alt="Model Y"
+    class="object-cover w-full h-full object-center"
+  />
+</Section>
